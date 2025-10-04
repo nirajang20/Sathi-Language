@@ -1,0 +1,29 @@
+{
+  "Print": {
+    "prefix": "bhanna",
+    "body": [
+      "sathi bhanna \"$1\""
+    ],
+    "description": "Print to console"
+  },
+  "IfElse": {
+    "prefix": "yedi",
+    "body": [
+      "sathi suru yedi ${1:condition} bhane",
+      "    sathi bhanna \"${2:yes branch}\"",
+      "sathi natra",
+      "    sathi bhanna \"${3:no branch}\"",
+      "sathi banda"
+    ],
+    "description": "If-Else block"
+  },
+  "Loop": {
+    "prefix": "doherau",
+    "body": [
+      "sathi doherau ${1:3} choti",
+      "    sathi bhanna \"${2:looping...}\"",
+      "sathi banda"
+    ],
+    "description": "Repeat loop"
+  }
+}

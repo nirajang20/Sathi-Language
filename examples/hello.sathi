@@ -1,0 +1,5 @@
+sathi yo ho naam = "NirajanG"
+sathi bhanna "Namaste, " + naam + "!"
+sathi yo ho x = 5
+sathi yo ho y = 10
+sathi bhanna "Sum: " + str(x + y)

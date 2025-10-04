@@ -1,0 +1,29 @@
+{
+  "scopeName": "source.sathi",
+  "patterns": [
+    {
+      "match": "\\bsathi\\b",
+      "name": "keyword.control.sathi"
+    },
+    {
+      "match": "\\b(yo|ho|bhanna|suru|bhane|natra|banda|doherau|choti|jaba|samjhau|firta|gara|leu|laga)\\b",
+      "name": "keyword.sathi"
+    },
+    {
+      "match": "\".*?\"",
+      "name": "string.quoted.double.sathi"
+    },
+    {
+      "match": "#.*$",
+      "name": "comment.line.number-sign.sathi"
+    },
+    {
+      "match": "\\b[0-9]+\\b",
+      "name": "constant.numeric.sathi"
+    },
+    {
+      "match": "\\b(sahi|galat)\\b",
+      "name": "constant.language.boolean.sathi"
+    }
+  ]
+}
