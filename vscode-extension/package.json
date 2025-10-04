@@ -2,8 +2,9 @@
   "name": "sathi-lang",
   "displayName": "Sathi Language",
   "description": "Code like you speak, friendly like a friend.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "NirajanG",
+  "icon": "sathi-icon.png",
   "engines": {
     "vscode": "^1.50.0"
   },
