@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sathi-lang"
+version = "1.1.0"
+authors = [
+  { name = "Nirajan Ghimire", email = "nirajanghimire20@gmail.com" }
+]
+description = "Sathi — a Nepali-inspired, human-friendly programming language (Romanized syntax)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Interpreters",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+
+[project.urls]
+"Homepage" = "https://nirajang.com.np/sathi"
+"Repository" = "https://github.com/nirajang20/Sathi-Language"
+"Issues" = "https://github.com/nirajang20/Sathi-Language/issues"
+
+[project.scripts]
+sathi = "sathi_lang.__main__:main"
