@@ -1,29 +1,64 @@
 {
-  "scopeName": "source.sathi",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Sathi",
   "patterns": [
     {
-      "match": "\\bsathi\\b",
-      "name": "keyword.control.sathi"
+      "include": "#keywords"
     },
     {
-      "match": "\\b(yo|ho|bhanna|suru|bhane|natra|banda|doherau|choti|jaba|samjhau|firta|gara|leu|laga)\\b",
-      "name": "keyword.sathi"
+      "include": "#strings"
     },
     {
-      "match": "\".*?\"",
-      "name": "string.quoted.double.sathi"
+      "include": "#numbers"
     },
     {
-      "match": "#.*$",
-      "name": "comment.line.number-sign.sathi"
+      "include": "#comments"
     },
     {
-      "match": "\\b[0-9]+\\b",
-      "name": "constant.numeric.sathi"
-    },
-    {
-      "match": "\\b(sahi|galat)\\b",
-      "name": "constant.language.boolean.sathi"
+      "include": "#functions"
     }
-  ]
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "match": "\\b(sathi|yo|ho|bhana|naya|sangai|bhane|natra|ani|wa|xaina|dohoryau|choti|samma|kam|gar|gara|farki|sakkyo|joda|ghatau|guna|bhaag|parkha|laga)\\b",
+          "name": "keyword.control.sathi"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "match": "\".*?\"",
+          "name": "string.quoted.double.sathi"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "\\b\\d+(\\.\\d+)?\\b",
+          "name": "constant.numeric.sathi"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "match": "#.*$",
+          "name": "comment.line.sathi"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "match": "\\b(kam|gara)\\s+\\w+",
+          "name": "entity.name.function.sathi"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.sathi"
 }
